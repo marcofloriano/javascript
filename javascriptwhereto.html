@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>JavaScript Where To</title>
+	<!-- Old Way -->
+	<!-- Old JavaScript examples may use a type attribute: <script type="text/javascript">.
+		The type attribute is not required. JavaScript is the default scripting language in HTML. -->
+	<script type="text/javascript"></script> 
+	<script type="text/javascript">
+		function myFunction(){
+			document.getElementById('demo2').innerHTML = "Paragraph changed.";
+		}
+	</script>
+	<!-- External scripts cannot contain <script> tags. -->
+	<script src="js/myScript.js"></script>
+</head>
+<body>
+	<!-- Placing scripts at the bottom of the <body> element improves the display speed, because script interpretation slows down the display. -->
+	<h2>Javascript in Body</h2>
+
+	<p id="demo"></p>
+
+	<script type="text/javascript">
+		document.getElementById('demo').innerHTML='My First JavaScript';
+	</script>
+
+	<h2>Demo JavaScript in Head</h2>
+
+	<p id="demo2">A Paragraph.</p>
+
+	<button type="button" onclick="myFunction()">Try it</button>
+
+	<h2>Demo JavaScript in Body</h2>
+
+	<p id="demo3">A New Paragraph.</p>
+
+	<button type="button" onclick="myFunction2()">Try it again</button>
+
+	<script>
+		function myFunction2() {
+			document.getElementById("demo3").innerHTML = "Paragraph changed.";
+		}
+	</script>
+
+	<h2>Demo JavaScript In File</h2>
+
+	<p id="demo4">Another Paragraph.</p>
+
+	<button type="button" onclick="myFunction3()">Try it again</button>
+
+</body>
+</html>
